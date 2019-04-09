@@ -11,8 +11,10 @@ html, body {
     margin: 0 auto;
     width: 100vw;
     font-family: 'Merriweather Sans', sans-serif;
+    overflow-x: hidden;
 }
 
 @import "partials/variables";
+@import "partials/buttons";
 @import "partials/nav";
 @import "partials/cover";

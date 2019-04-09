@@ -5,8 +5,37 @@
     flex-direction: column;
 
     height: 100vh;
+    min-height: 500px;
     width: 100vw;
-    background-color: $accent-color;
-    position: absolute;
-    top: 0px;
+    background: url("../images/Studying.jpg");
+    margin: 0 auto;
+    position: relative;
+
+    &__title {
+        font-size: 5rem;
+        font-weight: bold;
+        margin: 0rem;
+        text-shadow: $text-shadow;
+        color: white;
+    }
+
+    &__subtitle {
+        font-size: 2rem;
+        font-weight: normal;
+        margin: 0rem;
+        text-shadow: $text-shadow;
+        color: white;
+    }
+
+    &__source {
+        position: absolute;
+        z-index: 3;
+        bottom: 1rem;
+        padding: 1rem;
+        right: 1rem;
+        color: $gray-scale--light;
+        background-color: rgba($main-color, 0.9);
+        border-radius: 0.5rem;
+        box-shadow: $shadow;
+    }
 }

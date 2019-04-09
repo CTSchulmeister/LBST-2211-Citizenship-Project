@@ -1,0 +1,39 @@
+.down-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 3rem;
+    width: 3rem;
+    position: absolute;
+    bottom: 1rem;
+    
+    border-radius: 50%;
+    background-color: darken($accent-color, 30%);
+    
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+
+    &:hover {
+        animation: button-bounce 1s linear infinite;
+    }
+}
+
+@keyframes button-bounce {
+    0% {
+        transform: translateY(0rem);
+    } 
+    25% {
+        transform: translateY(0.5rem);
+    }
+    50% {
+        transform: translateY(0rem);
+    }
+    75% {
+        transform: translateY(-0.5rem);
+    }
+    100% {
+        transform: translateY(0rem);
+    }
+}
