@@ -1,0 +1,58 @@
+.nav {
+    height: 4rem;
+    width: 100%;
+    padding: 0rem 4rem;
+    
+    background-color: rgba($main-color, 0.9);
+    box-shadow: $shadow;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        height: 100%;
+        width: 100%;
+
+        list-style: none;
+        margin: 0rem;
+    }
+
+    &__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        height: 3rem;
+        position: relative;
+
+        text-transform: uppercase;
+        text-align: center;
+        color: $gray-scale--light;
+        text-decoration: none;
+
+        &:hover {
+            color: white;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            display: block;
+            height: 3px;
+            width: 100%;
+            background-color: $accent-color;
+            opacity: 0;
+            bottom: 5px;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        &:hover::after {
+            opacity: 1;
+        }
+
+    }
+}
