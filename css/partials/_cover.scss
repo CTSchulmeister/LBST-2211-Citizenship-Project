@@ -6,8 +6,10 @@
 
     height: 100vh;
     min-height: 500px;
-    width: 100vw;
+    width: 100%;
     background: url("../images/Studying.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: 0 auto;
     position: relative;
 
@@ -23,6 +25,14 @@
         font-size: 2rem;
         font-weight: normal;
         margin: 0rem;
+        text-shadow: $text-shadow;
+        color: white;
+    }
+
+    &__author {
+        font-size: 1.5rem;
+        font-weight: normal;
+        margin: 0.5rem;
         text-shadow: $text-shadow;
         color: white;
     }

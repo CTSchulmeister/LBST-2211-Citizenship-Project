@@ -2,14 +2,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    justify-self: center;
 
     height: 3rem;
     width: 3rem;
     position: absolute;
     bottom: 1rem;
-    
+    left: calc(50% - 1.5rem);
+
     border-radius: 50%;
     background-color: darken($accent-color, 30%);
+    box-shadow: $shadow;
     
     text-decoration: none;
     color: white;
@@ -17,6 +20,29 @@
 
     &:hover {
         animation: button-bounce 1s linear infinite;
+    }
+
+    &__tooltip {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-self: center;
+        background-color: rgba($main-color, 0.9);
+        border-radius: 0.5rem;
+        box-shadow: $shadow;
+        color: $gray-scale--light;
+        padding: 0.5rem;
+        width: 200px;
+        font-size: 1rem;
+        position: absolute;
+        bottom: 5rem;
+        opacity: 0;
+        transition: opacity ease-in-out 0.3s;
+    }
+
+    &:hover ~ &__tooltip {
+        opacity: 1;
+        transition: opacity ease-in-out 0.3s;
     }
 }
 
