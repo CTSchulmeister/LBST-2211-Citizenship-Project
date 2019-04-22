@@ -38,7 +38,7 @@
 
         &--text {
             font-size: 1.5rem;
-            padding: 1.5rem 0rem 0rem 1rem;
+            padding: 1.5rem 1rem 0rem;
         }
     }
 
@@ -96,7 +96,7 @@
 .image-fig {
     display: grid;
     grid-template-rows: 1fr 2.5rem;
-    grid-gap: 2rem;
+    grid-gap: 3rem;
 
     &__image-wrapper {
         position: relative;
@@ -117,6 +117,9 @@
     &__image {
         position: relative;
         z-index: 2;
+        height: 500px;
+        border: 3px solid lighten($main-color, 40%);
+        border-radius: 3px;
     }
 
     &__source-wrapper {
@@ -131,6 +134,7 @@
         box-shadow: $shadow;
         color: $gray-scale--light;
         padding: 0.5rem 1.5rem;
+        text-align: center;
     }
 }
 
