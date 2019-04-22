@@ -27,16 +27,21 @@
         align-items: center;
         justify-content: center;
         justify-self: center;
-        background-color: rgba($main-color, 0.9);
+
+        width: auto;
+        padding: 0.5rem 1.5rem;
+        position: absolute;
+        bottom: 5rem;
+        left: calc(50% - 100px);
+
+        background-color: rgba(darken($main-color, 5%), 0.9);
         border-radius: 0.5rem;
         box-shadow: $shadow;
         color: $gray-scale--light;
-        padding: 0.5rem;
-        width: 200px;
-        font-size: 1rem;
-        position: absolute;
-        bottom: 5rem;
         opacity: 0;
+        
+        font-size: 1rem;
+        
         transition: opacity ease-in-out 0.3s;
     }
 

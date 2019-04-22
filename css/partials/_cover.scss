@@ -44,7 +44,7 @@
         padding: 1rem;
         right: 1rem;
         color: $gray-scale--light;
-        background-color: rgba($main-color, 0.9);
+        background-color: rgba(darken($main-color, 5%), 0.9);
         border-radius: 0.5rem;
         box-shadow: $shadow;
     }

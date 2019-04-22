@@ -34,24 +34,7 @@ $(document).ready(() => {
     var kePosition = $('#ke').offset().top + ($('#ke').height() / 2);
     var vtPosition = $('#vt').offset().top + ($('#vt').height() / 2);
     var ftPosition = $('#ft').offset().top + ($('#ft').height() / 2);
-
-    /*
-    $(window).resize(() => {
-        // Recalculate height of page sections.
-        var activeElement = $('#home-link');
-        var homeHeight = $('#home').height();
-        var introHeight = $('#intro').height() + homeHeight;
-        var crHeight = $('#cr').height() + introHeight;
-        var rlHeight = $('#rl').height() + crHeight;
-        var eeHeight = $('#ee').height() + rlHeight;
-        var scHeight = $('#sc').height() + eeHeight;
-        var utHeight = $('#ut').height() + scHeight;
-        var keHeight = $('#ke').height() + utHeight;
-        var vtHeight = $('#vt').height() + keHeight;
-        var ftHeight = $('#ft').height() + vtHeight;
-        var srcHeight = $('#src').height() + ftHeight;
-    });
-    */
+    var conPosition = $('#con').offset().top + ($('#con').height() / 2);
 
     $(window).scroll(() => {
         var wScroll = $(window).scrollTop();
@@ -116,7 +99,13 @@ $(document).ready(() => {
                 $('#ft-link').addClass("nav__button--active");
                 activeElement = $('#ft-link');
             }
-        } else if(wScroll > ftPosition) {
+        } else if (wScroll > ftPosition && wScroll <= conPosition) {
+            if(!$('#con-link').hasClass("nav__button--active")) {
+                activeElement.removeClass("nav__button--active");
+                $('#con-link').addClass("nav__button--active");
+                activeElement = $('#con-link');
+            }
+        } else if(wScroll > conPosition) {
             if(!$('#src-link').hasClass("nav__button--active")) {
                 activeElement.removeClass("nav__button--active");
             }

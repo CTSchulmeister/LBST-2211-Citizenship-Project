@@ -8,6 +8,7 @@
         <title>Critically Informed</title>
         <link rel="stylesheet" href="css/style.css">
         <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=IM+Fell+English+SC" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
         <script src="js/jquery.js"></script>
         <script src="js/scroll.js"></script>
@@ -17,16 +18,17 @@
         <header class="header">
             <nav class="nav">
                 <ul class="nav__list">
-                    <li class="nav__item"><a class="nav__button nav__button--active" href="#home" id="home-link">Home</a></li>
-                    <li class="nav__item"><a class="nav__button" href="#intro" id="intro-link">Intro</a></li>
-                    <li class="nav__item"><a class="nav__button" href="#cr" id="cr-link">Cultural Relativism</a></li>
-                    <li class="nav__item"><a class="nav__button" href="#rl" id="rl-link">Religion</a></li>
-                    <li class="nav__item"><a class="nav__button" href="#ee" id="ee-link">Ethical Egoism</a></li>
-                    <li class="nav__item"><a class="nav__button" href="#sc" id="sc-link">Social Contract</a></li>
-                    <li class="nav__item"><a class="nav__button" href="#ut" id="ut-link">Utilitarianism</a></li>
-                    <li class="nav__item"><a class="nav__button" href="#ke" id="ke-link">Kantian Ethics</a></li>
-                    <li class="nav__item"><a class="nav__button" href="#vt" id="vt-link">Virtue Theory</a></li>
-                    <li class="nav__item"><a class="nav__button" href="#ft" id="ft-link">Feminist Theory</a></li>
+                    <li class="nav__item"><a class="nav__button nav__button--active" href="#home" id="home-link" title="Return to the title page.">Home</a></li>
+                    <li class="nav__item"><a class="nav__button" href="#intro" id="intro-link" title="Go to the introduction.">Intro</a></li>
+                    <li class="nav__item"><a class="nav__button" href="#cr" id="cr-link" title="Go to the section on cultural relativism.">Cultural Relativism</a></li>
+                    <li class="nav__item"><a class="nav__button" href="#rl" id="rl-link" title="Go to the section on religion.">Religion</a></li>
+                    <li class="nav__item"><a class="nav__button" href="#ee" id="ee-link" title="Go to the section on ethical egoism.">Ethical Egoism</a></li>
+                    <li class="nav__item"><a class="nav__button" href="#sc" id="sc-link" title="Go to the section on social contract theory.">Social Contract</a></li>
+                    <li class="nav__item"><a class="nav__button" href="#ut" id="ut-link" title="Go to the section on utilitarianism.">Utilitarianism</a></li>
+                    <li class="nav__item"><a class="nav__button" href="#ke" id="ke-link" title="Go to the section on kantian ethics.">Kantian</a></li>
+                    <li class="nav__item"><a class="nav__button" href="#vt" id="vt-link" title="Go to the section on virtue theory.">Virtue</a></li>
+                    <li class="nav__item"><a class="nav__button" href="#ft" id="ft-link" title="Go to the section on feminist theory.">Feminist</a></li>
+                    <li class="nav__item"><a class="nav__button" href="#con" id="con-link" title="Go to the section containing my conclusions.">Conclusion</a></li>
                 </ul>
             </nav>
         </header>
@@ -34,19 +36,27 @@
         <!-- Cover -->
         <main class="cover" id="home">
             <h1 class="cover__title">Critically Informed</h1>
-            <span class="cover__subtitle">Managing Misinformation in the Digital Age</span>
+            <h2 class="cover__subtitle">Managing Misinformation in the Digital Age</h2>
             <span class="cover__author">A Presentation by Christian Schulmeister</span>
-            <div class="cover__source">
+            <cite class="cover__source" aria-hidden="true">
                 Image Credit: University of Washington
-            </div>
-            <a class="down-btn" href="#intro"><i class="fas fa-chevron-down"></i></a>
-            <div class="down-btn__tooltip">Go to next section...</div>
+            </cite>
+            <a class="down-btn" href="#intro" aria-hidden="true"><i class="fas fa-chevron-down"></i></a>
+            <div class="down-btn__tooltip" aria-hidden="true">Go to next section...</div>
         </main>
 
         <section class="section section--intro" id="intro">
             <h2 class="section__heading">Intro</h2>
-            <a class="down-btn" href="#cr"><i class="fas fa-chevron-down"></i></a>
-            <div class="down-btn__tooltip">Go to next section...</div>
+            <div class="section__panel-container">
+                <div class="section__panel">
+                    Test
+                </div>
+                <div class="section__panel">
+                    Test
+                </div>
+            </div>
+            <a class="down-btn" href="#cr" aria-hidden="true"><i class="fas fa-chevron-down"></i></a>
+            <div class="down-btn__tooltip" aria-hidden="true">Go to next section...</div>
         </section>
 
         <!-- Cultural Relativism -->
@@ -59,55 +69,112 @@
         <!-- Religion -->
         <section class="section section--rl" id="rl">
             <h2 class="section__heading">Religion</h2>
-            <a class="down-btn" href="#ee"><i class="fas fa-chevron-down"></i></a>
-            <div class="down-btn__tooltip">Go to next section...</div>
+            <div class="section__panel-container">
+                <div class="section__panel">
+                    <blockquote class="quote">
+                        <p>Therefore, rid yourselves of all malice and all deceit, hypocrisy, envy, and slander of every kind.</p>
+                        <cite>- 1 Peter 2:1 (NIV)</cite>
+                    </blockquote>
+                    <blockquote class="quote">
+                        <p>We are not to lie, even if this might win us an advantage.</p>
+                        <cite>- Quran 16:92</cite>
+                    </blockquote>
+                    <blockquote class="quote">
+                        <p>Truth alone triumphs, not falsehood.</p>
+                        <cite>- Satyameva Jayate (Hindu Mundaka Upanishad)</cite>
+                    </blockquote>
+                </div>
+                <div class="section__panel section__panel--text">
+                    <p>
+                        As the verse listed here show, many religions hold deception as 
+                        a dishonorable trait, even if it serves to benefit the religious group.  
+                        Misinformation, being generally spread with the intent of deceiving an 
+                        audience for the benefit of whatever goal the creator is promoting, 
+                        would be detested by religious groups.
+                    </p>
+                    <p>
+                        That being said, studies suggest that religious people (just as 
+                        members of any dogmatic group) are more likely to be susceptible to 
+                        believing fake news (Bronstein, 2018).  This conflict between that 
+                        tendency and what many religious texts advocate for would suggest 
+                        that a good citizen who is also religious may need to be extra 
+                        skeptical when receiving their news.
+                    </p>
+                    <p>
+                        Note: The study cited here had a relative small sample size at just
+                        over 900 individuals, suggesting further research is needed to have
+                        a confident connection between religiosity and susceptibility to fake
+                        news. 
+                    </p>
+                </div>
+            </div>
+            <a class="down-btn" href="#ee" aria-hidden="true"><i class="fas fa-chevron-down"></i></a>
+            <div class="down-btn__tooltip" aria-hidden="true">Go to next section...</div>
         </section>
 
         <!-- Ethical Egoism -->
         <section class="section section--ee" id="ee">
             <h2 class="section__heading">Ethical Egoism</h2>
-            <a class="down-btn" href="#sc"><i class="fas fa-chevron-down"></i></a>
-            <div class="down-btn__tooltip">Go to next section...</div>
+            <a class="down-btn" href="#sc" aria-hidden="true"><i class="fas fa-chevron-down"></i></a>
+            <div class="down-btn__tooltip" aria-hidden="true">Go to next section...</div>
         </section>
 
         <!-- Social Contract -->
         <section class="section section--sc" id="sc">
             <h2 class="section__heading">Social Contract</h2>
-            <a class="down-btn" href="#ut"><i class="fas fa-chevron-down"></i></a>
-            <div class="down-btn__tooltip">Go to next section...</div>
+            <a class="down-btn" href="#ut" aria-hidden="true"><i class="fas fa-chevron-down"></i></a>
+            <div class="down-btn__tooltip" aria-hidden="true">Go to next section...</div>
         </section>
 
         <!-- Utilitarianism-->
         <section class="section section--ut" id="ut">
             <h2 class="section__heading">Utilitarianism</h2>
-            <a class="down-btn" href="#ke"><i class="fas fa-chevron-down"></i></a>
-            <div class="down-btn__tooltip">Go to next section...</div>
+            <a class="down-btn" href="#ke" aria-hidden="true"><i class="fas fa-chevron-down"></i></a>
+            <div class="down-btn__tooltip" aria-hidden="true">Go to next section...</div>
         </section>
 
         <!-- Kantian Ethics -->
         <section class="section section--ke" id="ke">
             <h2 class="section__heading">Kantian Ethics</h2>
-            <a class="down-btn" href="#vt"><i class="fas fa-chevron-down"></i></a>
-            <div class="down-btn__tooltip">Go to next section...</div>
+            <a class="down-btn" href="#vt" aria-hidden="true"><i class="fas fa-chevron-down"></i></a>
+            <div class="down-btn__tooltip" aria-hidden="true">Go to next section...</div>
         </section>
 
         <!-- Virtue Theory -->
         <section class="section section--vt" id="vt">
             <h2 class="section__heading">Virtue Theory</h2>
-            <a class="down-btn" href="#ft"><i class="fas fa-chevron-down"></i></a>
-            <div class="down-btn__tooltip">Go to next section...</div>
+            <a class="down-btn" href="#ft" aria-hidden="true"><i class="fas fa-chevron-down"></i></a>
+            <div class="down-btn__tooltip" aria-hidden="true">Go to next section...</div>
         </section>
 
         <!-- Feminist Theory -->
         <section class="section section--ft" id="ft">
             <h2 class="section__heading">Feminist Theory</h2>
-            <a class="down-btn" href="#src"><i class="fas fa-chevron-down"></i></a>
-            <div class="down-btn__tooltip">Go to next section...</div>
+            <a class="down-btn" href="#con" aria-hidden="true"><i class="fas fa-chevron-down"></i></a>
+            <div class="down-btn__tooltip" aria-hidden="true">Go to next section...</div>
+        </section>
+
+        <!-- Conclusion -->
+        <section class="section section--con" id="con">
+            <h2 class="section__heading">Conclusion</h2>
+            <a class="down-btn" href="#src" aria-hidden="true"><i class="fas fa-chevron-down"></i></a>
+            <div class="down-btn__tooltip" aria-hidden="true">View my sources...</div>
         </section>
 
         <!-- Sources -->
         <section class="section section-src" id="src">
             <h2 class="section__heading">Sources</h2>
+            <span class="source">
+                Bronstein et al. (2018). Belief in Fake News is Associated with 
+                Delusionality, Dogmatism, Religious Fundamentalism, and Reduced 
+                Analytic Thinking. 
+                <span class="source--italic">
+                    Journal of Applied Research in Memory and Cognition, 8(1).
+                </span>
+                <a class="source--link" href="https://www.sciencedirect.com/science/article/pii/S2211368118301050" target="_blank">
+                    <i class="fas fa-external-link-square-alt"></i>
+                </a>
+            </span>
         </section>
     </body>
 </html>

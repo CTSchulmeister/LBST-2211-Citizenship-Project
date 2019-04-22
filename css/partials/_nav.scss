@@ -1,7 +1,6 @@
 .nav {
     height: 4rem;
     width: 100%;
-    padding: 0rem 4rem;
     
     background-color: rgba($main-color, 0.9);
     box-shadow: $shadow;
@@ -48,6 +47,7 @@
             opacity: 0;
             bottom: 5px;
             transition: opacity 0.3s ease-in-out;
+            transform: skew(45deg, 0deg);
         }
 
         &:hover::after {
