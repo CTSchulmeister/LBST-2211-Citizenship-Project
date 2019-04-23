@@ -27,6 +27,7 @@
     &__panel-container {
         display: grid;
         grid-template-columns: 1fr 1rem 1fr;
+        height: 100%;
 
         &--single {
             grid-template-columns: 1fr;
@@ -41,10 +42,11 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        height: 100%;
 
         &--text {
-            font-size: 1.5rem;
-            padding: 1.5rem 1rem 0rem;
+            font-size: 1.4rem;
+            padding: 0rem 1rem;
         }
     }
 
@@ -85,7 +87,7 @@
         position: relative;
         z-index: 5;
         margin: 0rem;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         text-transform: uppercase;
         font-weight: bold;
         transform: skew(-10deg, 0deg);
@@ -146,7 +148,7 @@
 
 .source {
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     margin-bottom: 1rem;
 
     &--italic {
