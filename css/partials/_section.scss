@@ -101,6 +101,67 @@
     }
 }
 
+.about-fig {
+    display: grid;
+    grid-template-rows: 1fr 5rem;
+    grid-gap: 5rem;
+    grid-template-areas:
+        "image-wrapper"
+        "info-wrapper";
+    
+    height: 100%;
+    width: 60%;
+    margin: 0 auto;
+
+    &__image-wrapper {
+        grid-area: image-wrapper;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        position: relative;
+    }
+
+    &__background {
+        position: absolute;
+        height: 106%;
+        width: 110%;
+
+        transform: skew(5deg, 0deg);
+        background-color: white;
+        box-shadow: $shadow--big;
+        z-index: 1;
+    }
+
+    &__image {
+        display: flex;
+        justify-self: center;
+        position: relative;
+        z-index: 2;
+        height: 400px;
+        border: 3px solid lighten($main-color, 40%);
+        border-radius: 3px;
+        margin: 0 auto;
+    }
+
+    &__info-wrapper {
+        grid-area: info-wrapper;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__info {
+        background-color: rgba(darken($main-color, 5%), 0.9);
+        border-radius: 0.5rem;
+        box-shadow: $shadow;
+        color: $gray-scale--light;
+        padding: 0.5rem 1.5rem;
+        text-align: center;
+    }
+}
+
 .image-fig {
     display: grid;
     grid-template-rows: 1fr 2.5rem;
