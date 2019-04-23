@@ -197,6 +197,7 @@ html, body {
   font-size: 3rem;
   text-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.8);
   position: relative;
+  width: -moz-fit-content;
   width: fit-content;
 }
 .section__heading::after {

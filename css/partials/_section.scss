@@ -10,6 +10,7 @@
         font-size: 3rem;
         text-shadow: $text-shadow--section-heading;
         position: relative;
+        width: -moz-fit-content;
         width: fit-content;
 
         &::after {
