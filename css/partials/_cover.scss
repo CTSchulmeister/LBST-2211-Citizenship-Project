@@ -1,9 +1,6 @@
 .cover {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-rows: 1fr 4rem;
 
     height: 100vh;
     min-height: 500px;
@@ -12,8 +9,24 @@
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0 auto;
-    position: relative;
-    text-align: center;
+
+    &__main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    &__bottom {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        position: relative;
+    }
 
     &__title {
         font-size: 5rem;

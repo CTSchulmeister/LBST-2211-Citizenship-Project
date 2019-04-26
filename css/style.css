@@ -146,11 +146,8 @@ html, body {
   }
 }
 .cover {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-rows: 1fr 4rem;
   height: 100vh;
   min-height: 500px;
   width: 100%;
@@ -158,8 +155,21 @@ html, body {
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
-  position: relative;
+}
+.cover__main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
   text-align: center;
+}
+.cover__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
 }
 .cover__title {
   font-size: 5rem;
