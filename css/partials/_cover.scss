@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    flex-wrap: wrap;
 
     height: 100vh;
     min-height: 500px;
@@ -12,6 +13,7 @@
     background-size: cover;
     margin: 0 auto;
     position: relative;
+    text-align: center;
 
     &__title {
         font-size: 5rem;
@@ -35,7 +37,6 @@
         margin: 0.5rem;
         text-shadow: $text-shadow;
         color: white;
-        text-align: center;
     }
 
     &__source {
@@ -48,5 +49,17 @@
         background-color: rgba(darken($main-color, 5%), 0.9);
         border-radius: 0.5rem;
         box-shadow: $shadow;
+    }
+}
+
+@media (max-device-width: 500px), (max-width: 500px) {
+    .cover {
+        &__title {
+            font-size: 3rem;
+        }
+
+        &__subtitle {
+            font-size: 1.5rem;
+        }
     }
 }
